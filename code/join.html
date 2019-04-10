@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color:#224f25;}
+h1   {color: red;
+      font-family: sans;
+      font-size: 300%;
+      text-align: center;l
+  }
+  
+  p  {color: #b23535;
+      font-family: arial;
+      font-size: 150%}
+</style>
+</head>
+<body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  background-color:#ba926a;
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#ba926a;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#ba926a;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:#ba926a;padding:15px;text-align:center;">
+  <h1>FOOD RITE</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">Coupons</a>
+    <a href="#">Location</a>
+    <a href="#">Join</a>
+    <a href="#">Contacts</a>
+  </div>
+
+  <div class="main">
+    <h2>Join</h2>
+    <p><div class="col2_1_Bucket">
+			
+		<form id="captchaform" action="/joinus/processregistration" method="post">
+		<table class="tblMainBucket" cellspacing="0">
+				<tbody><tr>
+			<td class="formTextRight" style="width: 30%;">Username: </td>
+			<td class="formFields" style="width: 70%;"><input name="username" class="input" type="text" size="35" maxlength="55" value=""></td>
+		</tr>
+		<tr>
+			<td class="formTextRight">Email: </td>
+			<td class="formFields"><input name="email" class="input" type="text" size="35" maxlength="100" value=""></td>
+		</tr>
+		<tr>
+			<td class="formTextRight">Password: </td>
+			<td class="formFields"><input name="password" class="input" type="password" size="35" maxlength="25" placeholder="(6 to 25 characters)" value=""></td>
+		</tr>
+		<tr>
+			<td class="formTextRight">Confirm Password: </td>
+			<td class="formFields"><input name="confirmpassword" class="input" type="password" size="35" maxlength="25" value=""></td>
+		</tr>
+		
+		<tr>
+			<td class="formTextRight">My Store: </td>
+			<td class="formFields">
+				<select name="mystorestate" id="mystorestatemenu" data-mystore=""><option selected="selected" value="">Select State</option><option value="Kentucky">Kentucky</option><option value="Tennessee">Tennessee</option></select> 				<div id="storemenubucket"></div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>&nbsp;</td>
+			<td class="formFields">
+			<div><div class="grecaptcha-badge" style="transition:right 0.3s; width: 256px; height: 60px; right: -186px; bottom: 14px; position: fixed; box-shadow: 0px 0px 5px gray;" data-style="bottomright"><div class="grecaptcha-logo"><iframe name="a-y6t7a6nduemh" width="256" height="60" role="presentation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfCHhsUAAAAAGNb1F6M3rhHUY0bwqiQLLguoaQY&amp;co=aHR0cHM6Ly93d3cubXlmb29kcml0ZS5jb206NDQz&amp;hl=en&amp;v=v1552285980763&amp;size=invisible&amp;cb=rb0cj17lnmnd" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea name="g-recaptcha-response" class="g-recaptcha-response" id="g-recaptcha-response" style="margin: 10px 25px; padding: 0px; border: 1px solid rgb(193, 193, 193); border-image: none; width: 250px; height: 40px; display: none;"></textarea></div></div><button name="btnCreateAccount" class="g-recaptcha" type="button" data-sitekey="6LfCHhsUAAAAAGNb1F6M3rhHUY0bwqiQLLguoaQY" data-callback="onSubmit">Submit</button>
+			</td>
+		</tr>
+		</tbody></table>
+		</form>
+		
+	</div></p>
+  </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p></p>
+  </div>
+</div>
+</body>
+</html>
